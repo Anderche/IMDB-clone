@@ -5,9 +5,11 @@ class MoviesController < ApplicationController
 	end
 
 	def new
+		@movie = Movie.new
 	end
 
 	def create
+		@movie = Movie.new(movie_params)
 	end
 
 	def show
@@ -15,6 +17,8 @@ class MoviesController < ApplicationController
 
 	private
 
-	
+	def movie_params
+		params.require(:movie).permit(:title, :text, :rating, :category)
+	end
 
 end
