@@ -3,3 +3,6 @@
 <h4><%= @movie.rating %></h4>
 <h5><%= @movie.category %></h5>
 
+<%= link_to "Take me Home", root_path %>
+<%= link_to "EDIT", edit_movie_path %>
+<%= link_to "DELETE", movie_path(@movie), method: :delete %>

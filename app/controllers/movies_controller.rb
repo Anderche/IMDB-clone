@@ -23,6 +23,25 @@ class MoviesController < ApplicationController
 		end
 	end
 
+	def edit
+	end
+
+	def update
+		if @movie.update(movie_params)
+			redirect_to movie_path(@movie)
+		else
+			render 'edit'
+		end
+	end
+
+	def destroy
+		if @movie.destroy
+			redirect_to root_path
+		else
+			render 'edit'
+		end
+	end
+
 	private
 
 	def movie_params
