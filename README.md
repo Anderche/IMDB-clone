@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+h3
+This site is an IMDB clone
 
-Things you may want to cover:
+*test the admin panel with the following credentials:*
 
-* Ruby version
+UN: admin@cloneimdb.com
+PW: temp@dmin
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+coded by:
+Anders Kiss
+September 2019
