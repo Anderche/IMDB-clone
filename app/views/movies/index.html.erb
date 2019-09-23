@@ -1,0 +1,9 @@
+<h1>Welcome to an IMDB clone</h1>
+
+<h3>Check out our movie selection</h3>
+
+<% @movies.each do |movie| %>
+	<h2><%= link_to movie.title, movie_path(movie) %></h2>
+<% end %>
+
+<%= link_to "ADD movie", new_movie_path %>
