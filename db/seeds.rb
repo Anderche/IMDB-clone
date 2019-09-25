@@ -6,6 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts 'Seeding Admin data...'
+
+User.create!({
+email: "admin@cloneimdb.com", 
+password: "temp@dmin", 
+admin: true
+})
+
+puts 'Seeding Finished...'
+
+puts '----------'
+
 puts 'Seeding Movies...'
 
 Movie.create!({

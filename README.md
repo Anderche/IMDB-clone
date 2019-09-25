@@ -13,6 +13,17 @@
 
 <br>
 
+
+<p>Seeding Instructions:</p>
+```ruby
+rake db:drop db:create db:migrate
+```
+
+```ruby
+rake db:seed
+```
+
+
 coded by:
 Anders Kiss
 September 2019
