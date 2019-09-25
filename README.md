@@ -12,7 +12,7 @@ rake db:drop db:create db:migrate
 rake db:seed
 ```
 
-<p>Login as Admin:</p>
+<p>Login to homepage with Admin credentials:</p>
 
 - UN: 
 
@@ -22,7 +22,11 @@ rake db:seed
 
 ```temp@dmin```
 
+...then navigate to homepage_URL/admin
+
 <br>
+
+
 
 
 coded by:
