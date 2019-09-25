@@ -4,12 +4,16 @@
 
 <br>
 
-<p>
-**test the admin panel with the following credentials:**
 
-- UN: admin@cloneimdb.com
-- PW: temp@dmin
-</p>
+<p>Login as admin the following credentials:</p>
+
+- UN: 
+
+```admin@cloneimdb.com```
+
+- PW:
+
+```temp@dmin```
 
 <br>
 
