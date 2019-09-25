@@ -5,7 +5,7 @@
 <br>
 
 
-<p>Login as admin the following credentials:</p>
+<p>Login as Admin:</p>
 
 - UN: 
 
