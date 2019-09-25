@@ -1,8 +1,21 @@
-<h1><%= @movie.title %></h1>
-<p><%= @movie.text %></p>
-<h4><%= @movie.rating %></h4>
-<h5><%= @movie.category %></h5>
+<div class="container">
+	<h1><%= "Title:" %></h1><h1><%= @movie.title %></h1>
+	<p><%= "Description:" %></p><p><%= @movie.text %></p>
+	<h4><%= "Rating:" %></h4><h4><%= @movie.rating %></h4>
+	<h5><%= "Category:" %></h5><h5><%= @movie.category %></h5>
+</div>
 
-<%= link_to "Take me Home", root_path %>
-<%= link_to "EDIT", edit_movie_path %>
-<%= link_to "DELETE", movie_path(@movie), method: :delete %>
+<div class="container">
+	<button type="button" class="btn btn-secondary">
+		<%= link_to "Take me Home", root_path %>
+	</button>
+	<button type="button" class="btn btn-secondary">
+		<%= link_to "EDIT", edit_movie_path %>
+	</button>
+	<button type="button" class="btn btn-secondary">
+		<%= link_to "DELETE", movie_path(@movie), method: :delete %>
+	</button>
+</div>
+
+
+<%= link_to "ADD rating", new_movie_path %>

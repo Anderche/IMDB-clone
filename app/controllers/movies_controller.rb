@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
+	before_action :authenticate_user!
 	before_action :find_movie, only: [:show, :edit, :update, :destroy]
-
 
 	def index
 		@movies = Movie.all
@@ -49,7 +49,10 @@ class MoviesController < ApplicationController
 	end
 
 	def find_movie
-		@movie = Movie.find(params[:id])
+		# @movie = Movie.find(params[:id])
+
+		# revised for friendly_id integration:
+		@movie = Movie.friendly.find(params[:id])
 	end
 
 end

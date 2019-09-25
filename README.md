@@ -1,24 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h3>This site is an IMDB clone</h3>
+<br>
+<p>Rails version: 5.2.3</p>
+<br>
+<p>Seeding Instructions:</p>
 
-Things you may want to cover:
+```ruby
+rake db:drop db:create db:migrate
+```
 
-* Ruby version
+```ruby
+rake db:seed
+```
 
-* System dependencies
+<p>Login to homepage with Admin credentials:</p>
 
-* Configuration
+- UN: 
 
-* Database creation
+```
+admin@cloneimdb.com
+```
 
-* Database initialization
+- PW:
 
-* How to run the test suite
+```
+temp@dmin
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+...then navigate to homepage_URL/admin
 
-* Deployment instructions
+<br>
 
-* ...
+
+
+
+coded by:
+Anders Kiss
+September 2019

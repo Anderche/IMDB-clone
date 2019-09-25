@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails'
-
+gem 'devise', '~> 4.6', '>= 4.6.2'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -54,3 +54,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rails_admin'
+
+gem 'friendly_id', '~> 5.3'
