@@ -7,7 +7,6 @@ class MoviesController < ApplicationController
 	end
 
 	def show
-		@movie = Movie.friendly.find(params[:id])
 	end
 
 	def new
@@ -50,7 +49,10 @@ class MoviesController < ApplicationController
 	end
 
 	def find_movie
-		@movie = Movie.find(params[:id])
+		# @movie = Movie.find(params[:id])
+
+		# revised for friendly_id integration:
+		@movie = Movie.friendly.find(params[:id])
 	end
 
 end
