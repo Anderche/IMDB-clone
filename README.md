@@ -15,6 +15,7 @@
 
 
 <p>Seeding Instructions:</p>
+
 ```ruby
 rake db:drop db:create db:migrate
 ```
