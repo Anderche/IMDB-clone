@@ -18,11 +18,15 @@ rake db:seed
 
 - UN: 
 
-```admin@cloneimdb.com```
+```
+admin@cloneimdb.com
+```
 
 - PW:
 
-```temp@dmin```
+```
+temp@dmin
+```
 
 ...then navigate to homepage_URL/admin
 
