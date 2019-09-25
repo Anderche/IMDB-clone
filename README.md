@@ -5,7 +5,7 @@
 <br>
 
 <p>
-*test the admin panel with the following credentials:*
+**test the admin panel with the following credentials:**
 
 - UN: admin@cloneimdb.com
 - PW: temp@dmin
