@@ -1,7 +1,6 @@
-<%= simple_form_for @movie do |f| %>
-  <%= f.input :title, label: "Movie Title" %>
-  <%= f.input :text, label: "Movie Description"%>
-  <%= f.input :rating, label: "Movie Rating" %>
-  <%= f.input :category, label: "Movie Category"%>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+	<%= simple_form_for @movie do |f| %>
+	  <%= f.input :rating, label: "Movie Rating", input_html: {value: f.object.rating || '10'}%>
+	  <%= f.button :submit, label: "ADD" %>
+	<% end %>
+</div>
