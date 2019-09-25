@@ -2,6 +2,8 @@
 
 <h3>This site is an IMDB clone</h3>
 <br>
+<p>Rails version: 5.2.3</p>
+<br>
 <p>Seeding Instructions:</p>
 
 ```ruby

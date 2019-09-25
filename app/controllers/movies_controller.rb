@@ -7,6 +7,7 @@ class MoviesController < ApplicationController
 	end
 
 	def show
+		@movie = Movie.friendly.find(params[:id])
 	end
 
 	def new
