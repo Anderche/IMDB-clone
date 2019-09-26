@@ -1,7 +1,23 @@
-<h1>Welcome to an IMDB clone</h1>
+<h1>Welcome to the <em>Official</em> IMDB clone</h1>
 
-<h3>Check out our movie selection</h3>
+<h3>Check out our movie selection:</h3>
 
-<% @movies.each do |movie| %>
-	<h2><%= link_to movie.title, movie_path(movie) %></h2>
-<% end %>
+<br>
+
+<div class="container">	
+	<div class="row">
+		<% @movies.each do |movie| %>
+			<h2><%= link_to movie.title, movie_path(movie) %></h2>
+			<div class="col-sm-6">
+				<div class="card">
+				  <img src="/assets/coppola.jpg" class="card-img-top" alt="Francis Ford Coppola flick">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= movie.title %></h5>
+				    <h6 class="card-text"><%= movie.text %></h6>
+				    <button ><%= link_to movie.title, movie_path(movie) %></button>
+				  </div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
